@@ -1,0 +1,42 @@
+\documentclass[12pt]{report}
+\usepackage[Glenn]{fncychap}
+\usepackage{xkeyval}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[contents={}]{background}
+\usepackage{lipsum}
+\usepackage{wallpaper}
+\usepackage{titlesec}
+\usepackage[francais]{babel}
+
+\setmainfont[Path=fonts/,
+    BoldItalicFont=calibriz.ttf,
+    BoldFont      =calibrib.ttf,
+    ItalicFont    =calibrii.ttf]{calibri.ttf}
+        
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+\begin{document}
+
+\input{titlepage.tex}
+
+\newpage
+
+\ULCornerWallPaper{.15}{images/alltech.png}
+\LRCornerWallPaper{.2}{images/bdx.jpg} 
+
+\tableofcontents
+
+\newpage
+
+\chapter{Introduction}
+\section{Présentation de l'entreprise}
+
+
+\end{document}
