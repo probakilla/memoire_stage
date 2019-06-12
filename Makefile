@@ -11,7 +11,7 @@ build: $(MAIN_FILE).tex
 	$(COMPILER) $^
 
 check: $(SOURCES)
-	for f in $^; do echo $f; done
+	find . -name "*.tex" -exec $(SPELL_CHECKER) {} \;
 
 clean:
 	$(RM) $(MAIN_FILE).aux $(MAIN_FILE).toc $(MAIN_FILE).pdf $(MAIN_FILE).log
